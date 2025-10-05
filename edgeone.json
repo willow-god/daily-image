@@ -1,0 +1,27 @@
+{
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "statusCode": 301
+    }
+  ],
+  "caches": [
+    {
+      "source": "/daily.webp",
+      "cacheTtl": 18000
+    },
+    {
+      "source": "/daily.jpeg",
+      "cacheTtl": 18000
+    },
+    {
+      "source": "/origin.jpeg",
+      "cacheTtl": 18000
+    },
+    {
+      "source": "/picture/*.webp",
+      "cacheTtl": 864000
+    }
+  ]
+}
