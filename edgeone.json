@@ -1,0 +1,46 @@
+{
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "statusCode": 301
+    }
+  ],
+  "caches": [
+    {
+      "source": "/daily.webp",
+      "cacheTtl": 18000
+    },
+    {
+      "source": "/daily.jpeg",
+      "cacheTtl": 18000
+    },
+    {
+      "source": "/origin.jpeg",
+      "cacheTtl": 18000
+    },
+    {
+      "source": "/picture/*.webp",
+      "cacheTtl": 864000
+    }
+  ],
+  "headers": [
+    {
+      "source": "/*",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, OPTIONS, PUT, DELETE"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "*"
+        }
+      ]
+    }
+  ]
+}
